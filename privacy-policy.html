@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YDScore Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1a1a1a; background: #f7f7f5;
+    max-width: 46rem; margin-inline: auto;
+  }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  .meta { color: #666; font-size: .9rem; margin-bottom: 1.5rem; }
+  ul { padding-inline-start: 1.25rem; }
+  li { margin: .35rem 0; }
+  code { background: rgba(0,0,0,.06); padding: .1rem .35rem; border-radius: .3rem; font-size: .9em; }
+  a { color: #2b5bd7; }
+  .note { background: rgba(43,91,215,.08); border-left: 3px solid #2b5bd7;
+    padding: .75rem 1rem; border-radius: .4rem; margin: 1rem 0; font-size: .95rem; }
+  footer { margin-top: 3rem; color: #666; font-size: .85rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #16171a; }
+    .meta, footer { color: #9a9a9a; }
+    code { background: rgba(255,255,255,.1); }
+    a { color: #7aa2ff; }
+    .note { background: rgba(122,162,255,.1); border-left-color: #7aa2ff; }
+  }
+</style>
+</head>
+<body>
+  <h1>YDScore — Gizlilik Politikası</h1>
+  <p class="meta">Son güncelleme: 21 Temmuz 2026</p>
+
+  <p>
+    YDScore, YDS / e-YDS sınavına hazırlık için geliştirilen bir eğitim
+    uygulamasıdır. Gizliliğinize önem veriyoruz. Bu politika, uygulamanın
+    hangi verileri işlediğini ve nasıl işlediğini açıklar. Özetle:
+    <strong>YDScore hesap oluşturmaz, kişisel kimlik bilgisi toplamaz ve
+    çalışma verilerinizi cihazınızda saklar.</strong>
+  </p>
+
+  <h2>1. Topladığımız veriler</h2>
+  <p>
+    Uygulamayı kullanmak için ad, e-posta, telefon numarası ya da herhangi
+    bir hesap bilgisi gerekmez. YDScore aşağıdaki verileri
+    <strong>yalnızca cihazınızda</strong> saklar ve bunları bize veya üçüncü
+    kişilere göndermez:
+  </p>
+  <ul>
+    <li>Çalışma ilerlemeniz (program günleri, tamamlanan görevler)</li>
+    <li>Kelime tekrar (SRS) durumu ve eklediğiniz kişisel kelime kartları</li>
+    <li>Deneme sınavı geçmişiniz ve puanlarınız</li>
+    <li>Yanlış defteri kayıtları ve uygulama tercihleriniz (bildirim, telaffuz aksanı vb.)</li>
+  </ul>
+  <p>
+    Bu veriler cihazınızın yerel deposunda tutulur. Reklam, analitik veya
+    izleme (tracking) araçları kullanılmaz; konum, rehber veya cihaz
+    tanımlayıcılarınız toplanmaz.
+  </p>
+
+  <h2>2. Yedekleme (Android Auto Backup)</h2>
+  <p>
+    Android'in standart otomatik yedekleme özelliği açıksa, uygulama
+    verileriniz <strong>kendi Google Drive hesabınıza</strong> Android
+    tarafından yedeklenebilir. Bu yedeğe yalnızca siz erişirsiniz;
+    geliştirici bu verilere erişemez. Bu özelliği cihazınızın Google
+    ayarlarından yönetebilir veya kapatabilirsiniz. Ayrıca uygulama içindeki
+    "Yedekleme" bölümünden verilerinizi kendiniz dosya olarak dışa
+    aktarabilir veya geri yükleyebilirsiniz.
+  </p>
+
+  <h2>3. Bildirimler</h2>
+  <p>
+    Ayarlar'dan açtığınızda, günlük çalışma hatırlatması için
+    <strong>cihaz üzerinde yerel bildirimler</strong> zamanlanır. Bu
+    bildirimler için hiçbir veri sunucuya gönderilmez ve bildirimleri
+    istediğiniz zaman kapatabilirsiniz.
+  </p>
+
+  <h2>4. İsteğe bağlı AI özelliği (Premium)</h2>
+  <div class="note">
+    Bu özellik ilk sürümde <strong>kapalıdır</strong> ve yalnızca ileride
+    Premium abonelikle etkinleştirildiğinde çalışır. Etkin olduğunda dahi
+    veri gönderimi yalnızca siz bir kartı "AI ile zenginleştir" dediğinizde
+    gerçekleşir.
+  </div>
+  <p>
+    <strong>Kendi eklediğiniz</strong> bir kelime kartını AI ile
+    zenginleştirmek istediğinizde, yalnızca o karta ait metin (kelime,
+    anlamı, varsa örnek cümle ve notunuz) HTTPS üzerinden YDScore'un
+    sunucusuna (Cloudflare Worker) iletilir; sunucu bunu açıklama üretmesi
+    için Google'ın Gemini yapay zekâ hizmetine gönderir. Bu işlemde:
+  </p>
+  <ul>
+    <li>Adınız, e-postanız veya bir hesap bilgisi <strong>gönderilmez.</strong></li>
+    <li>Yalnızca günlük hak sınırını uygulamak için rastgele üretilmiş,
+      kimliğinizi açığa çıkarmayan <strong>anonim bir cihaz kimliği</strong>
+      kullanılır.</li>
+    <li>Gönderilen metin, profil oluşturmak veya reklam için kullanılmaz;
+      yalnızca sizin istediğiniz açıklamayı üretmek için işlenir.</li>
+  </ul>
+  <p>
+    Uygulamada hazır bulunan sorular ve içerik için AI çağrısı yapılmaz;
+    bunların açıklamaları uygulamayla birlikte cihazınıza gelir ve çevrimdışı
+    çalışır. Google'ın bu işlemdeki veri uygulamaları Google'ın kendi
+    koşullarına tabidir.
+  </p>
+
+  <h2>5. Verilerin paylaşımı ve satışı</h2>
+  <p>
+    Verileriniz satılmaz, reklam amacıyla paylaşılmaz. Yukarıda 4. maddede
+    açıklanan isteğe bağlı AI işlemi dışında hiçbir veri üçüncü taraflara
+    aktarılmaz.
+  </p>
+
+  <h2>6. Verilerinizi silme</h2>
+  <p>
+    Tüm çalışma verileriniz cihazınızda olduğundan, uygulama içindeki
+    "Tüm verileri sıfırla" seçeneğiyle ya da uygulamayı kaldırarak verilerinizi
+    silebilirsiniz. Android Auto Backup ile alınmış bir yedeği Google hesap
+    ayarlarınızdan yönetebilirsiniz.
+  </p>
+
+  <h2>7. Çocukların gizliliği</h2>
+  <p>
+    YDScore, sınav hazırlığına yönelik bir eğitim uygulamasıdır ve kişisel
+    veri toplamaz. Uygulama çocuklardan bilerek kişisel bilgi istemez.
+  </p>
+
+  <h2>8. Değişiklikler</h2>
+  <p>
+    Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde sayfanın
+    üst kısmındaki "Son güncelleme" tarihi yenilenir.
+  </p>
+
+  <h2>9. İletişim</h2>
+  <p>
+    Gizlilikle ilgili sorularınız için:
+    <a href="mailto:furkan.wolfteam424@gmail.com">furkan.wolfteam424@gmail.com</a>
+  </p>
+
+  <p class="note">
+    <strong>Not:</strong> YDScore, ÖSYM ile ilişkili değildir; bağımsız bir
+    çalışma uygulamasıdır. "YDS" ve "e-YDS" ÖSYM'nin sınav adlarıdır.
+  </p>
+
+  <footer>
+    © 2026 YDScore · Paket kimliği: com.idastudios.ydscore
+  </footer>
+</body>
+</html>
