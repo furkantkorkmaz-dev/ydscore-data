@@ -34,41 +34,39 @@
 </head>
 <body>
   <h1>YDScore — Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: 22 Temmuz 2026</p>
+  <p class="meta">Son güncelleme: 9 Kasım 2026</p>
 
   <p>
     YDScore, YDS / e-YDS sınavına hazırlık için geliştirilen bir eğitim
     uygulamasıdır. Gizliliğinize önem veriyoruz. Bu politika, uygulamanın
     hangi verileri işlediğini ve nasıl işlediğini açıklar. Özetle:
-    <strong>YDScore hesap oluşturmaz, kişisel kimlik bilgisi toplamaz ve
-    çalışma verilerinizi cihazınızda saklar.</strong>
+    <strong>YDScore hesap oluşturmaz, adınızı, e-postanızı veya konumunuzu
+    toplamaz; çalışma verilerinizi cihazınızda saklar.</strong> Uygulamayı
+    geliştirmek için yalnızca <strong>anonim</strong> öğrenme istatistikleri
+    ve hata raporları gönderilir (madde 4).
   </p>
 
   <p>
     <strong>Veri sorumlusu:</strong> Furkan Tahsin Korkmaz (idastudios) —
     iletişim: <a href="mailto:korkmazfurkantahsin@gmail.com">korkmazfurkantahsin@gmail.com</a>.
-    Uygulama sunucularında kişisel verinizi tutmadığımız için, verileriniz
-    cihazınızda <strong>siz silene ya da uygulamayı kaldırana kadar</strong>
-    saklanır (saklama süresi tamamen sizin kontrolünüzdedir).
   </p>
 
-  <h2>1. Topladığımız veriler</h2>
+  <h2>1. Cihazınızda kalan veriler</h2>
   <p>
     Uygulamayı kullanmak için ad, e-posta, telefon numarası ya da herhangi
-    bir hesap bilgisi gerekmez. YDScore aşağıdaki verileri
-    <strong>yalnızca cihazınızda</strong> saklar ve bunları bize veya üçüncü
-    kişilere göndermez:
+    bir hesap bilgisi gerekmez. Aşağıdaki veriler <strong>yalnızca
+    cihazınızda</strong> saklanır:
   </p>
   <ul>
-    <li>Çalışma ilerlemeniz (program günleri, tamamlanan görevler)</li>
+    <li>Çalışma ilerlemeniz (program günleri, tamamlanan görevler, seri)</li>
     <li>Kelime tekrar (SRS) durumu ve eklediğiniz kişisel kelime kartları</li>
     <li>Deneme sınavı geçmişiniz ve puanlarınız</li>
-    <li>Yanlış defteri kayıtları ve uygulama tercihleriniz (bildirim, telaffuz aksanı vb.)</li>
+    <li>Yanlış defteri kayıtları ve uygulama tercihleriniz (hatırlatmalar, hedef puan, sınav tarihi vb.)</li>
   </ul>
   <p>
-    Bu veriler cihazınızın yerel deposunda tutulur. Reklam, analitik veya
-    izleme (tracking) araçları kullanılmaz; konum, rehber veya cihaz
-    tanımlayıcılarınız toplanmaz.
+    Bu veriler siz silene ya da uygulamayı kaldırana kadar cihazınızda
+    kalır. Reklam araçları ve üçüncü taraf analitik/izleme (tracking)
+    SDK'ları kullanılmaz; konum, rehber veya reklam kimliği toplanmaz.
   </p>
 
   <h2>2. Yedekleme (Android Auto Backup)</h2>
@@ -84,99 +82,168 @@
 
   <h2>3. Bildirimler</h2>
   <p>
-    Ayarlar'dan açtığınızda, günlük çalışma hatırlatması için
-    <strong>cihaz üzerinde yerel bildirimler</strong> zamanlanır. Bu
-    bildirimler için hiçbir veri sunucuya gönderilmez ve bildirimleri
-    istediğiniz zaman kapatabilirsiniz.
+    Hatırlatma kurduğunuzda bildirimler <strong>cihaz üzerinde yerel
+    olarak</strong> zamanlanır. Bu bildirimler için hiçbir veri sunucuya
+    gönderilmez ve bildirimleri istediğiniz zaman kapatabilirsiniz.
   </p>
 
-  <h2>4. İsteğe bağlı AI özelliği (Premium)</h2>
-  <div class="note">
-    Bu özellik ilk sürümde <strong>kapalıdır</strong> ve yalnızca ileride
-    Premium abonelikle etkinleştirildiğinde çalışır. Etkin olduğunda dahi
-    veri gönderimi yalnızca siz bir kartı "AI ile zenginleştir" dediğinizde
-    gerçekleşir.
-  </div>
+  <h2>4. Anonim öğrenme istatistikleri ve hata raporları</h2>
   <p>
-    <strong>Kendi eklediğiniz</strong> bir kelime kartını AI ile
-    zenginleştirmek istediğinizde, yalnızca o karta ait metin (kelime,
-    anlamı, varsa örnek cümle ve notunuz) HTTPS üzerinden YDScore'un
-    sunucusuna (Cloudflare Worker) iletilir; sunucu bunu açıklama üretmesi
-    için Google'ın Gemini yapay zekâ hizmetine gönderir. Bu işlemde:
+    Hangi konuların zorladığını, hangi sorunun hatalı olabileceğini ve
+    uygulamanın hangi sürümde sorun çıkardığını görmek için uygulama,
+    YDScore'un kendi sunucusuna (Cloudflare Worker) HTTPS üzerinden şu
+    anonim verileri gönderir:
   </p>
   <ul>
-    <li>Adınız, e-postanız veya bir hesap bilgisi <strong>gönderilmez.</strong></li>
-    <li>Yalnızca günlük hak sınırını uygulamak için rastgele üretilmiş,
-      kimliğinizi açığa çıkarmayan <strong>anonim bir cihaz kimliği</strong>
-      kullanılır.</li>
-    <li>Gönderilen metin, profil oluşturmak veya reklam için kullanılmaz;
-      yalnızca sizin istediğiniz açıklamayı üretmek için işlenir.</li>
+    <li><strong>Öğrenme istatistikleri:</strong> çözdüğünüz hazır sorunun
+      kimliği ve konusu, cevaplanıp cevaplanmadığı, doğru olup olmadığı,
+      seçilen şıkkın sırası, harcanan süre, açıklamanın açılıp açılmadığı;
+      test türü ve bitirilip bitirilmediği; uygulama sürümü ve platform.
+      Soru metni veya sizin yazdığınız bir metin gönderilmez.</li>
+    <li><strong>Hata raporları:</strong> uygulamada bir hata oluşursa hatanın
+      türü, kısaltılmış mesajı ve kod içindeki konumu, uygulama sürümü ve
+      platform. Mesajdaki tırnak içi metinler ve uzun sayılar cihazdan çıkmadan
+      önce maskelenir.</li>
   </ul>
   <p>
-    Uygulamada hazır bulunan sorular ve içerik için AI çağrısı yapılmaz;
-    bunların açıklamaları uygulamayla birlikte cihazınıza gelir ve çevrimdışı
-    çalışır. Google'ın bu işlemdeki veri uygulamaları Google'ın kendi
-    koşullarına tabidir.
+    Sunucu bu verileri yalnızca <strong>günlük toplamlar</strong> olarak
+    saklar (ör. "bugün bu soru 40 kez çözüldü"). Tek tek kayıtlar, cihaz
+    kimliği veya tam zaman damgası saklanmaz; bu yüzden veriler size
+    bağlanamaz. Kötüye kullanımı önlemek için anonim cihaz kimliği (madde 6)
+    yalnızca hız sınırı uygulamakta kullanılır ve kaydedilmez. Öğrenme
+    toplamları en fazla 400 gün, hata toplamları 90 gün tutulur.
   </p>
 
-  <h2>5. Sınav takvimi güncellemesi</h2>
+  <h2>5. Pro aboneliği ve AI özellikleri</h2>
+  <div class="note">
+    AI özellikleri yalnızca <strong>Pro</strong> aboneliğinde ve
+    <strong>yalnızca siz o özelliği başlattığınızda</strong> çalışır; arka
+    planda kendiliğinden AI isteği gönderilmez. Ücretsiz sürümde AI
+    özellikleri kapalıdır.
+  </div>
+  <p>
+    AI isteklerinde veri şu yolu izler: cihazınız → HTTPS üzerinden
+    YDScore'un sunucusu (Cloudflare Worker) → yapay zekâ hizmeti (şu anda
+    <strong>Google Gemini</strong>; sağlayıcı değişirse bu sayfa güncellenir).
+    Özellikler ve her birinde gönderilen veri:
+  </p>
+  <ul>
+    <li><strong>Kişisel kelime kartı zenginleştirme:</strong> yalnızca o karta
+      ait metin — kelime, anlamı, varsa örnek cümleniz ve notunuz.</li>
+    <li><strong>AI Yanlış Açıklayıcı:</strong> yanlış cevapladığınız hazır
+      sorunun metni, şıkları, varsa okuma parçası, işaretlediğiniz şık ve
+      uygulamayla gelen çevrimdışı açıklama. Bu içerik uygulamanın kendi soru
+      bankasından gelir; sizin yazdığınız bir metin değildir.</li>
+    <li><strong>AI gramer ipucu:</strong> hazır gramer sorusunun cümlesi,
+      şıkları, konusu ve kural notu (soru bankasından).</li>
+    <li><strong>Haftalık AI Koç Raporu:</strong> yalnızca <em>sayısal</em>
+      ilerleme özeti — çalıştığınız gün sayısı, seri, deneme sayısı ve
+      puanlarınız, en zayıf soru türlerinizin adları, yanlış defteri ve kelime
+      sayılarınız, sınava kalan gün. Soru veya cevap metni gönderilmez.</li>
+  </ul>
+  <p>
+    Gönderilen veri profil oluşturmak veya reklam için kullanılmaz; yalnızca
+    istediğiniz çıktıyı üretmek için işlenir. Sunucu, hizmetin sağlığını
+    izlemek için günlük toplam istek sayıları tutar. Bir AI açıklamasını
+    "hatalı/uygunsuz" diye bildirirseniz, incelenebilmesi için o açıklamanın
+    metni ve soru kimliği kayda yazılır.
+  </p>
+  <p>
+    <strong>Ödeme:</strong> Pro aboneliği Google Play üzerinden satılır.
+    Ödeme bilgileriniz Google Play'de kalır ve bize hiçbir zaman ulaşmaz.
+    Aboneliğin geçerliliği RevenueCat üzerinden doğrulanır (madde 7).
+  </p>
+
+  <h2>6. Anonim cihaz kimliği</h2>
+  <p>
+    Uygulama ilk açılışta rastgele bir kimlik üretir (ör.
+    <code>yds_…</code>). Bu kimlik adınızı, telefon numaranızı veya
+    cihazınızın donanım kimliğini içermez ve reklam kimliği değildir. Şu
+    amaçlarla kullanılır: AI günlük hak sınırı ve hız sınırı, abonelik
+    doğrulaması ve RevenueCat'te satın almanızı temsil etmek. Uygulamayı
+    kaldırıp yeniden kurarsanız yeni bir kimlik üretilir; aboneliğinizi
+    "Satın almaları geri yükle" ile yeni kimliğe taşıyabilirsiniz.
+  </p>
+
+  <h2>7. Kullandığımız üçüncü taraf hizmetler</h2>
+  <ul>
+    <li><strong>Google Play:</strong> Uygulamanın dağıtımı ve Pro aboneliğinin
+      satışı/ödemesi.</li>
+    <li><strong>RevenueCat:</strong> Abonelik durumunu yönetir ve sunucumuzun
+      doğrulamasını sağlar. Satın alma ekranını gösterebilmek için uygulama
+      açıldığında RevenueCat'e bağlanır; anonim cihaz kimliğiniz, satın alma
+      geçmişiniz (Google Play'den gelen abonelik durumu) ve uygulama/işletim
+      sistemi sürümü gibi teknik bilgiler işlenir.</li>
+    <li><strong>Cloudflare:</strong> YDScore sunucusunu (Worker) ve
+      veritabanını barındırır; AI isteklerini iletir, günlük hak sayacını,
+      anonim istatistikleri ve hata toplamlarını tutar.</li>
+    <li><strong>Google (Gemini AI):</strong> Pro AI özelliklerini
+      kullandığınızda 5. maddede sayılan veriyi açıklama/rapor üretmek için
+      işler.</li>
+    <li><strong>Expo (EAS Update):</strong> Uygulama açılışta küçük
+      güncellemeleri (hata düzeltmeleri) Expo sunucularından indirir. Bu
+      istekte uygulama sürümü ve platform gibi teknik bilgiler gönderilir;
+      çalışma verileriniz gönderilmez.</li>
+    <li><strong>GitHub:</strong> Herkese açık sınav takvimi dosyasını
+      barındırır (madde 8).</li>
+    <li><strong>Google (Android Auto Backup):</strong> Cihaz ayarınız açıksa
+      verileriniz kendi Google Drive hesabınıza yedeklenir (madde 2).</li>
+  </ul>
+  <p>
+    Her internet isteğinde olduğu gibi IP adresiniz ilgili sağlayıcıya
+    görünebilir. Bu hizmetler bizim adımıza hizmet sağlayıcı olarak çalışır;
+    veri uygulamaları kendi koşullarına tabidir.
+  </p>
+
+  <h2>8. Sınav takvimi güncellemesi</h2>
   <p>
     Uygulama, resmî YDS / e-YDS sınav tarihlerini güncel tutmak için, herkese
     açık barındırılan küçük bir takvim dosyasını (JSON) zaman zaman internetten
-    indirir. Herhangi bir internet isteğinde olduğu gibi bu istekte
-    barındırma sağlayıcısına (GitHub) IP adresiniz görünebilir; ancak
-    <strong>bu istekte adınız, çalışma verileriniz veya kişisel bir bilginiz
-    gönderilmez</strong>. İnternet yoksa uygulamayla gelen gömülü takvim
-    kullanılır. Resmî tarihler için daima ÖSYM'nin kendi sitesini esas alın.
+    indirir. Bu istekte <strong>adınız, çalışma verileriniz veya kişisel bir
+    bilginiz gönderilmez</strong>. İnternet yoksa uygulamayla gelen gömülü
+    takvim kullanılır. Resmî tarihler için daima ÖSYM'nin kendi sitesini esas
+    alın.
   </p>
 
-  <h2>6. Kullandığımız üçüncü taraf hizmetler</h2>
-  <ul>
-    <li><strong>Google (Android Auto Backup):</strong> Cihaz ayarınız açıksa
-      verileriniz kendi Google Drive hesabınıza yedeklenir (bkz. 2. madde).</li>
-    <li><strong>GitHub:</strong> Yukarıdaki herkese açık sınav takvimi dosyasını
-      barındırır (5. madde).</li>
-    <li><strong>Google (Gemini AI):</strong> Yalnızca ileride Premium AI özelliği
-      etkinleştirilir ve siz kullanırsanız, yalnızca ilgili kartın metni işlenir
-      (bkz. 4. madde). İlk sürümde bu özellik kapalıdır.</li>
-  </ul>
-
-  <h2>7. Verilerin paylaşımı ve satışı</h2>
+  <h2>9. Verilerin paylaşımı ve satışı</h2>
   <p>
     Verileriniz satılmaz, reklam amacıyla paylaşılmaz ve profil oluşturmak için
-    kullanılmaz. 4. maddedeki isteğe bağlı AI işlemi dışında hiçbir çalışma
-    veriniz üçüncü taraflara aktarılmaz.
+    kullanılmaz. Veriler yalnızca 7. maddedeki hizmet sağlayıcılarla, o
+    maddede yazan amaçlarla işlenir.
   </p>
 
-  <h2>8. Verilerinizi silme ve KVKK haklarınız</h2>
+  <h2>10. Verilerinizi silme ve KVKK haklarınız</h2>
   <p>
-    Tüm çalışma verileriniz cihazınızda olduğundan, uygulama içindeki
-    "Tüm verileri sıfırla" seçeneğiyle ya da uygulamayı kaldırarak verilerinizi
-    silebilirsiniz. Android Auto Backup ile alınmış bir yedeği Google hesap
-    ayarlarınızdan yönetebilirsiniz.
+    Cihazınızdaki tüm çalışma verilerini uygulama içindeki "Tüm verileri
+    sıfırla" seçeneğiyle ya da uygulamayı kaldırarak silebilirsiniz. Android
+    Auto Backup ile alınmış bir yedeği Google hesap ayarlarınızdan
+    yönetebilirsiniz. Sunucudaki anonim günlük toplamlar size bağlanamadığı
+    için kişiye özel silinemez; madde 4'teki süreler dolunca otomatik silinir.
+    RevenueCat'teki abonelik kaydınızın silinmesini aşağıdaki adresten
+    isteyebilirsiniz.
   </p>
   <p>
     6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında; kişisel
     verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini
     veya silinmesini isteme ve işlemeye itiraz etme gibi haklara sahipsiniz.
-    YDScore sunucularında kişisel verinizi tutmadığı için bu hakların çoğu
-    doğrudan cihazınızda (verileri sıfırlama/silme) kullanılabilir; her türlü
-    talep ve soru için aşağıdaki iletişim adresinden bize ulaşabilirsiniz.
+    Her türlü talep ve soru için aşağıdaki iletişim adresinden bize
+    ulaşabilirsiniz.
   </p>
 
-  <h2>9. Çocukların gizliliği</h2>
+  <h2>11. Çocukların gizliliği</h2>
   <p>
-    YDScore, sınav hazırlığına yönelik bir eğitim uygulamasıdır ve kişisel
-    veri toplamaz. Uygulama çocuklardan bilerek kişisel bilgi istemez.
+    YDScore, sınav hazırlığına yönelik bir eğitim uygulamasıdır ve 18 yaş ve
+    üzeri kullanıcıları hedefler. Uygulama çocuklardan bilerek kişisel bilgi
+    istemez.
   </p>
 
-  <h2>10. Değişiklikler</h2>
+  <h2>12. Değişiklikler</h2>
   <p>
     Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde sayfanın
     üst kısmındaki "Son güncelleme" tarihi yenilenir.
   </p>
 
-  <h2>11. İletişim</h2>
+  <h2>13. İletişim</h2>
   <p>
     Gizlilikle ilgili sorularınız için:
     <a href="mailto:korkmazfurkantahsin@gmail.com">korkmazfurkantahsin@gmail.com</a>
